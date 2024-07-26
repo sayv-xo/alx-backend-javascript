@@ -16,7 +16,7 @@ export default class HolbertonCourse {
     if (typeof val !== 'string') {
       throw new TypeError('Name must be a string');
     }
-      this._name = val;
+    this._name = val;
   }
 
   get length() {
