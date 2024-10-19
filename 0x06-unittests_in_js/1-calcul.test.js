@@ -55,5 +55,8 @@ describe('calculateNumber', () => {
     it('should return 1', () => {
       assert.strictEqual(calculateNumer('DIVIDE', 1.5, 2), 1);
     });
+    it('should return error', () => {
+      assert.strictEqual(calculateNumer('DIVIDE', 1.2, 0), 'Error');
+    });
   });
 });
